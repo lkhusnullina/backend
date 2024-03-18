@@ -1,8 +1,5 @@
 const router = require('express').Router();
-// const logger = require('./middlewares/logger');
 const { getUsers, getUser, createUser, updateUser, deleteUser } = require('../controllers/users');
-
-// router.use(logger);
 
 router.get('/users', getUsers);
 router.get('/users/:user_id', getUser);
